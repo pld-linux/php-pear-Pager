@@ -1,16 +1,16 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Pager
 %define		_pearname	%{_class}
-Summary:	%{_class} - Generic data paging class
-Summary(pl):	%{_class} - Podstawowa klasa pagera
+Summary:	%{_class} - generic data paging class
+Summary(pl):	%{_class} - podstawowa klasa do dzielenia na strony
 Name:		php-pear-%{_pearname}
 Version:	1.0.3
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-BuildRequires:	rpm-php-pearprov
 URL:		http://pear.php.net/
+BuildRequires:	rpm-php-pearprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -22,6 +22,12 @@ give you back/next and page number links taking the current url and
 adding the correct page id to it.
 
 %description -l pl
+Ta klasa pomaga w sytuacji, kiedy dane wymagaj± podzia³u na strony
+(np. pozycje 1-10 na pierwszej stronie, 11-20 na drugiej itd.). Po
+przekazaniu tablicy danych klasa dzieli na strony, pobieraj±c
+identyfikator strony z URL-a. Mo¿e tak¿e podaæ odno¶niki do
+poprzedniej i nastêpnej strony, bior±c aktualny URL i dodaj±c do niego
+w³a¶ciwe identyfikatory stron.
 
 %prep
 %setup -q -c
