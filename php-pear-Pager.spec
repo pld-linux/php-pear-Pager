@@ -1,10 +1,10 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Pager
 %define		_pearname	%{_class}
-Summary:	%{_class} - generic data paging class
-Summary(pl):	%{_class} - podstawowa klasa do dzielenia na strony
+Summary:	%{_pearname} - generic data paging class
+Summary(pl):	%{_pearname} - podstawowa klasa do dzielenia na strony
 Name:		php-pear-%{_pearname}
-Version:	1.0.5
+Version:	1.0.6
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
