@@ -5,7 +5,7 @@ Summary:	%{_class} - generic data paging class
 Summary(pl):	%{_class} - podstawowa klasa do dzielenia na strony
 Name:		php-pear-%{_pearname}
 Version:	1.0.4
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
