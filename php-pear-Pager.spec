@@ -25,7 +25,7 @@ into pages, picking up the current page id from the url. It can also
 give you back/next and page number links taking the current url and
 adding the correct page id to it.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Ta klasa pomaga w sytuacji, kiedy dane wymagaj± podzia³u na strony
