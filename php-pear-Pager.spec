@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Pager
 %define		_pearname	%{_class}
-Summary:	%{_class}_%{_subclass} - Generic data paging class
-Summary(pl):	%{_class}_%{_subclass} - Podstawowa klasa pagera
+Summary:	%{_class} - Generic data paging class
+Summary(pl):	%{_class} - Podstawowa klasa pagera
 Name:		php-pear-%{_pearname}
 Version:	1.0.3
 Release:	1
