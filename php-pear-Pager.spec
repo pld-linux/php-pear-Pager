@@ -1,15 +1,17 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Pager
 %define		_pearname	%{_class}
+%define		_status		stable
+
 Summary:	%{_pearname} - generic data paging class
 Summary(pl):	%{_pearname} - podstawowa klasa do dzielenia na strony
 Name:		php-pear-%{_pearname}
-Version:	1.0.7
+Version:	1.0.8
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	c2c8d54835bb520bad373bf103b9eb17
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	3b16cdde3ab1db8bd3511f64ea8b9e0f
 URL:		http://pear.php.net/package/%{_pearname}/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -23,6 +25,8 @@ into pages, picking up the current page id from the url. It can also
 give you back/next and page number links taking the current url and
 adding the correct page id to it.
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Ta klasa pomaga w sytuacji, kiedy dane wymagaj± podzia³u na strony
 (np. pozycje 1-10 na pierwszej stronie, 11-20 na drugiej itd.). Po
@@ -30,6 +34,8 @@ przekazaniu tablicy danych klasa dzieli na strony, pobieraj±c
 identyfikator strony z URL-a. Mo¿e tak¿e podaæ odno¶niki do
 poprzedniej i nastêpnej strony, bior±c aktualny URL i dodaj±c do niego
 w³a¶ciwe identyfikatory stron.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
