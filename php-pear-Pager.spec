@@ -6,13 +6,13 @@
 Summary:	%{_pearname} - generic data paging class
 Summary(pl):	%{_pearname} - podstawowa klasa do dzielenia na strony
 Name:		php-pear-%{_pearname}
-Version:	2.4.2
+Version:	2.4.3
 Release:	1
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	9dd1fd0aee0e8039f1a4033f822d50c3
+# Source0-md5:	d3f8f14d8bdc53865dd79623d8f55b32
 URL:		http://pear.php.net/package/Pager/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -68,11 +68,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc install.log
 %doc docs/%{_pearname}/*
-%dir %{php_pear_dir}/%{_class}
+%{php_pear_dir}/%{_class}
+%{php_pear_dir}/%{_class}.php
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/*.php
 
 %files tests
 %defattr(644,root,root,755)
