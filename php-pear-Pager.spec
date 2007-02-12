@@ -4,7 +4,7 @@
 %define		_status		stable
 
 Summary:	%{_pearname} - generic data paging class
-Summary(pl):	%{_pearname} - podstawowa klasa do dzielenia na strony
+Summary(pl.UTF-8):   %{_pearname} - podstawowa klasa do dzielenia na strony
 Name:		php-pear-%{_pearname}
 Version:	2.4.3
 Release:	1
@@ -31,19 +31,19 @@ adding the correct page id to it.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ta klasa pomaga w sytuacji, kiedy dane wymagaj± podzia³u na strony
+%description -l pl.UTF-8
+Ta klasa pomaga w sytuacji, kiedy dane wymagajÄ… podziaÅ‚u na strony
 (np. pozycje 1-10 na pierwszej stronie, 11-20 na drugiej itd.). Po
-przekazaniu tablicy danych klasa dzieli na strony, pobieraj±c
-identyfikator strony z URL-a. Mo¿e tak¿e podaæ odno¶niki do
-poprzedniej i nastêpnej strony, bior±c aktualny URL i dodaj±c do niego
-w³a¶ciwe identyfikatory stron.
+przekazaniu tablicy danych klasa dzieli na strony, pobierajÄ…c
+identyfikator strony z URL-a. MoÅ¼e takÅ¼e podaÄ‡ odnoÅ›niki do
+poprzedniej i nastÄ™pnej strony, biorÄ…c aktualny URL i dodajÄ…c do niego
+wÅ‚aÅ›ciwe identyfikatory stron.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -52,7 +52,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
