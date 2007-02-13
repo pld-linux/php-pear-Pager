@@ -4,7 +4,7 @@
 %define		_status		stable
 
 Summary:	%{_pearname} - generic data paging class
-Summary(pl.UTF-8):   %{_pearname} - podstawowa klasa do dzielenia na strony
+Summary(pl.UTF-8):	%{_pearname} - podstawowa klasa do dzielenia na strony
 Name:		php-pear-%{_pearname}
 Version:	2.4.3
 Release:	1
@@ -43,7 +43,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
