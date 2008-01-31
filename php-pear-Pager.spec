@@ -7,7 +7,7 @@ Summary:	%{_pearname} - generic data paging class
 Summary(pl.UTF-8):	%{_pearname} - podstawowa klasa do dzielenia na strony
 Name:		php-pear-%{_pearname}
 Version:	2.4.4
-Release:	1
+Release:	2
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
