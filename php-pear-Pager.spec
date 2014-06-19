@@ -1,20 +1,19 @@
-%define		_pearname	Pager
-%define		_status		stable
+%define		pearname	Pager
+%define		status		stable
 %include	/usr/lib/rpm/macros.php
-Summary:	%{_pearname} - generic data paging class
-Summary(pl.UTF-8):	%{_pearname} - podstawowa klasa do dzielenia na strony
-Name:		php-pear-%{_pearname}
+Summary:	%{pearname} - generic data paging class
+Summary(pl.UTF-8):	%{pearname} - podstawowa klasa do dzielenia na strony
+Name:		php-pear-%{pearname}
 Version:	2.4.9
 Release:	1
-Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
 # Source0-md5:	394dcb02467e8000ad023fb0c00a85e3
 URL:		http://pear.php.net/package/Pager/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.654
 Requires:	php-pear
 Obsoletes:	php-pear-Pager-tests
 Obsoletes:	php-pear-Pager_Sliding
@@ -28,7 +27,7 @@ into pages, picking up the current page id from the url. It can also
 give you back/next and page number links taking the current url and
 adding the correct page id to it.
 
-In PEAR status of this package is: %{_status}.
+In PEAR status of this package is: %{status}.
 
 %description -l pl.UTF-8
 Ta klasa pomaga w sytuacji, kiedy dane wymagają podziału na strony
@@ -38,7 +37,7 @@ identyfikator strony z URL-a. Może także podać odnośniki do
 poprzedniej i następnej strony, biorąc aktualny URL i dodając do niego
 właściwe identyfikatory stron.
 
-Ta klasa ma w PEAR status: %{_status}.
+Ta klasa ma w PEAR status: %{status}.
 
 %prep
 %pear_package_setup
@@ -53,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc docs/%{_pearname}/*
+%doc docs/%{pearname}/*
 %{php_pear_dir}/Pager
 %{php_pear_dir}/Pager.php
 %{php_pear_dir}/.registry/*.reg
