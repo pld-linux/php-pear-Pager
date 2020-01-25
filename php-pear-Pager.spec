@@ -1,6 +1,5 @@
 %define		pearname	Pager
 %define		status		stable
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - generic data paging class
 Summary(pl.UTF-8):	%{pearname} - podstawowa klasa do dzielenia na strony
 Name:		php-pear-%{pearname}
